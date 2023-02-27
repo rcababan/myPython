@@ -10,6 +10,8 @@ def counter(start, stop):
             if number_count > stop:
                 message += ', '
             number_count -= 1
+    elif start == stop:
+        message = "Numbers are the same! No need to count."
     else:
         message = "COUNTUP: "
         while number_count <= stop:
